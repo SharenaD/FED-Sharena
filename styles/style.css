@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/**************/
+/* CSS REMEDY */
+/**************/
+
+*, :after, :before {
+    box-sizing: inherit;
+	margin: 0;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--starbucks-black: black;
+	--starbucks-white: #fff;
+	--starbucks-green: #00754a;
+	--starbucks-darkgreen: #006241;
+	--starbucks-grey: #f7f7f7; 
+	--starbucks-textgrey: rgba(0, 0, 0, .58);
+	--starbucks-border: rgba(0, 0, 0, .12);
+	--font-starbucks: "Noto Sans", sans-serif;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body{
+	font-family: var(--font-starbucks);
+}
+
+body.active {
+	overflow: hidden;
+}
+
+header {
+	padding: 1em 1.25em;
+	background:var(--starbucks-white);
+	border-bottom: 1px solid var(--starbucks-border);
+	position: sticky;
+	top:0; 
+	z-index: 1;
+}
+  
+header nav{
+	display:flex;
+	justify-content: space-between;
+	padding: 0 .3em;
+}
+
+header nav img {
+	width: 14%;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+header nav button{
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+	aspect-ratio: 1/1;
+	width: 2em;
+	align-content: center;
+	justify-content: center;
+	background-color: transparent;
+	border: none;
+}
+
+header nav button span{
+	display: block;
+	width: 100%;
+	height: .2em;
+	background-color: var(--starbucks-black);
+}
+
+main {
+	position: relative;
+	overflow-x: hidden;
+	padding: 0 1.25em;
+}
+
+main > nav {
+	position: absolute;
+	z-index: 1;
+	background-color: var(--starbucks-white);
+	width: 100%;
+	height: 100vh;
+	padding: 1.25em 1rem;
+	display: flex;
+	gap: 2em;
+	flex-direction: column;
+	transform: translateX(100vw);
+	transition: .5s;
+}
+
+main > nav.active {
+	transform: translateX(-1.25em);
+}
+
+main > nav ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+main > nav ul li a{
+	font-size: 1.2em;
+	text-decoration: none;
+	color: var(--starbucks-black);
+}
+
+details ul li{
+	margin-top: 1em;
+	font-size: .7em;
+}
+
+main section {
+	border-radius: 1em;
+	overflow: hidden;
+	margin-bottom: 1.25em;
+}
+
+main section article {
+	border-radius: 1em;
+	padding: 1.5em 1.5em 2.5em;
+}
+
+main section img{
+	width: 100%;
+}
+
+main section:nth-of-type(even) {
+	background-color: var(--starbucks-green);
+	color: var(--starbucks-white);
+}
+  
+main section:nth-of-type(odd) {
+	background-color: var(--starbucks-grey);
+}
+
+main section:first-of-type {
+	background-color: var(--starbucks-darkgreen);
+	width: 100vw;
+	margin-inline-start: -1.25em;
+	border-radius: 0;
+}
+
+main section a{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 550;
+	padding: 1em;
+	border-radius: 2em;
+	margin-top: 2em;
+}
+
+  
+
+main section:nth-of-type(even) a{
+	background-color: var(--starbucks-white);
+	color: var(--starbucks-black);
+}
+
+main section:nth-of-type(odd) a{
+	background-color: var(--starbucks-green);
+	color: var(--starbucks-white);
+}
+
+main section:first-of-type a{
+	background-color: var(--starbucks-white);
+	color: var(--starbucks-black);
+	margin: 1em;
+}
+
+main section article h2{
+	font-size: 1.18em;
+	font-weight: 500;
+	line-height: 1.5em;
+	padding-bottom: .5em;
+}
+
+main section article p{
+	font-size: .8em;
+}
+
+main section h1{
+	font-size: 1.2em;
+	font-weight: 500;
+	color: var(--starbucks-white);
+	margin: 1em;
+	padding: 0 0 1.5em;
+}
+
+main > h1{
+	font-size: 1.5em;
+	font-weight: 550;
+	color: var(--starbucks-black);
+	margin-top: 1em;
+}
+
+footer{
+	background-color: var(--starbucks-darkgreen);
+	padding-bottom: 4em;
+}
+
+footer img{
+	width: 8%;
+	margin: 1.3em;
+	margin-bottom: 0;
+}
+
+footer ul{
+	margin: 1em;
+}
+
+footer ul li a{
+	color: var(--starbucks-white);
+	text-decoration: none;
+	font-size: .8em;
+	padding: .5em;
+}
+
+footer ul:nth-of-type(2){
+	color: var(--starbucks-white);
+	text-decoration: none;
+	font-size: .7em;
+	padding: .5em;
+}
+
+
+footer nav{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--starbucks-white);
+	border-top: 1px solid var(--starbucks-border);
+}  
+
+
+footer nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0;
+	margin: 0;
+  }
+  
+  footer nav ul li a {
+	text-decoration: none;
+	color: var(--starbucks-darkgreen);
+	font-weight: 500;
+	font-size: .8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 20px;
+  }
+  
+  footer nav ul li a:hover {
+	color: green;
+  }
+
+  footer nav ul li a svg {
+	width: 1.6rem;
+	height: 2rem;
+  }
+  
+  
+/* tweede pagina */
+
+.contact section:first-of-type{
+	margin-bottom: 0;
+}
+
+.contact section:nth-of-type(n + 2), .contact a {
+	padding: .3em;
+	margin: 0;
+	color: black;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.contact h2{
+	margin-bottom: 1em;
+}
+
+.contact a {
+	background-color: transparent;
+	display: inline-block;
+	transition: transform 0.3s;
+}
+
+.contact p a:hover {
+	text-decoration: underline;
+	transform: scale(1.5);
+}
+
+.contact section:nth-of-type(odd) a {
+	color: var(--starbucks-darkgreen);
+	background-color: transparent;
+	/* text-decoration: underline; */
+}
+
+.contact section:nth-of-type(even) a {
+	color: var(--starbucks-darkgreen);
+	background-color: transparent;
+	/* text-decoration: underline; */
+}
+
+.contact p {
+	font-size: .8rem;
+}
+
+.contact section p a{
+	padding-left: 0;
+}
+
+form{
+	font-family: var(--font-starbucks);
+	margin-top: 1em;
+	display: flex;
+	gap: .3em;
+	display: flex;
+	justify-content: left;
+    flex-direction: column; 
+	gap: .3em;
+
+}
+
+label{
+	display: block;
+	justify-content: left;
+}
+
+section form label input:invalid{
+	background-color: var(--starbucks-grey);
+}
+section form label input:valid{
+	background-color: rgba(0, 255, 94, 0.315);
+}
+
+section input { 
+	appearance:none;
+	border:solid .15em var(--starbucks-green);
+}
+
+form button{
+	background-color: var(--starbucks-green);
+	color: var(--starbucks-white);
+	font-size: 1em;
+	padding: .5em;
+	margin: 1em;
+}
+
+
+
+
+
