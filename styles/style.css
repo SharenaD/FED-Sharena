@@ -55,6 +55,19 @@ header nav img {
 	width: 14%;
 }
 
+@keyframes draai-animatie {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+header nav img:hover {
+    animation-name: draai-animatie;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
 ul {
 	padding: 0;
 }
@@ -154,6 +167,12 @@ main section:first-of-type {
 	border-radius: 0;
 }
 
+
+main section a:hover,
+main section a:focus-visible { 
+  	rotate:180deg;
+}
+
 main section a{
 	display: flex;
 	justify-content: center;
@@ -163,7 +182,10 @@ main section a{
 	padding: 1em;
 	border-radius: 2em;
 	margin-top: 2em;
+  
+	transition:.5s;
 }
+
 
   
 
@@ -196,18 +218,43 @@ main section article p{
 
 main section h1{
 	font-size: 1.2em;
-	font-weight: 500;
+	font-weight: 900;
 	color: var(--starbucks-white);
 	margin: 1em;
-	padding: 0 0 1.5em;
+	padding: 1.5em 0 1.5em;
 }
 
 main > h1{
 	font-size: 1.5em;
-	font-weight: 550;
 	color: var(--starbucks-black);
 	margin-top: 1em;
 }
+
+h1 {
+	--main-color:white;
+	--blue-color:rgb(29, 112, 25);
+	--cyan-color:rgb(226, 181, 90);
+	--magenta-color:magenta;
+	--yellow-color:rgb(0, 51, 255);
+	--black-color:rgb(51, 188, 101);
+
+	overflow:hidden;
+  }
+  
+  h1 {
+	letter-spacing:.1em;
+	color:var(--main-color);
+	transition:.5s;
+  }
+  
+  h1:hover {
+	text-shadow:
+	  0 -2em 0 var(--cyan-color),
+	  0 -1em 0 var(--magenta-color),
+	  0 1em 0 var(--yellow-color),
+	  0 2em 0 var(--black-color);
+  }
+
 
 footer{
 	background-color: var(--starbucks-darkgreen);
@@ -369,6 +416,29 @@ form button{
 	margin: 1em;
 }
 
+.contact h2 {
+	color: #000;
+}
+
+@keyframes spring-animatie {
+	0% {
+	  translate:0em 0em;
+	}
+	100% {
+	  translate:0em -8rem;
+	}
+  }
+  
+form button:hover {
+	animation-name:spring-animatie;
+	animation-duration:.5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+
+  
+  
+  
 
 
 

@@ -141,7 +141,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 </details>
 
+## FEEDBACK voor herkansing
+  <summary>Wat ga ik aanpassen na het eerste mondeling?</summary>
 
+  ### Ontvangen feedback Vasilis
+  - Zorg er voor dat je met een screen reader alle headings en alle links kunt laten voorlezen.
+  - Neem de toegankelijkheidstests serieus! Er zijn nu erg weinig bevindingen, en ik mis de foto's van je WCAG formulier.
+  - Voeg meer mooie en toffe dingen toe. Kijk bijvoorbeeld naar animaties, transities, states, gradients. Er zijn allemaal toffe en mooie dingen die je kunt toevoegen.
+
+  ### Wat heb ik aangepast?
+  Ik heb het WCAG formulier opnieuw en serieuzer ingevuld en heb er samen naar gekeken met Nina. 
 
 
 
