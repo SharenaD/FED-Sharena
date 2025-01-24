@@ -150,8 +150,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Voeg meer mooie en toffe dingen toe. Kijk bijvoorbeeld naar animaties, transities, states, gradients. Er zijn allemaal toffe en mooie dingen die je kunt toevoegen.
 
   ### Wat heb ik aangepast?
-  Ik heb het WCAG formulier opnieuw en serieuzer ingevuld en heb er samen naar gekeken met Nina. 
+  Ik heb het WCAG formulier opnieuw en serieuzer ingevuld en heb er samen naar gekeken met Nina. Ook heb ik animaties toegevoegd die ik in de oefeningen tijdens de lessen geleerd heb, ik was daar vorige keer niet aan toe gekomen. En verder heb ik geoefend om beter met de screenreader te werken; Door de pijlen op mijn toetsenbord te gebruiken.
+  
+  
+  ### WCAG
+  Wat opviel bij de echte starbucks site is dat ik heen h1 terug kon vinden in de code met de screenreader of als ik door de code las. Er was geen mooie volgorde van kopjes, op sommige pagina's stond de h3 boven de h2. Ook lijkt bij de validatie van mijn eigen code een probleem te zijn met een aantal animaties, maar Nina zei tegen me dat dat geen probleem is in dit geval. Ik had het liever willen fixen natuurlijk want de code hoort wel gewoon valid te zijn. Verder vind ik dat de echte site niet geheel toegankelijk is, omdat het ook wel een veel complexere code heeft dan mijn site, en daarom scoort de echte site wel iets minder goed op het WCAG formulier.
 
+  <img src="images/WCAG1.jpg" width="375px" alt="WCAG1">
+  <img src="images/WCAG2.jpg" width="375px" alt="WCAG2">
+  <img src="images/WCAG3.jpg" width="375px" alt="WCAG3">
+  <img src="images/WCAG4.jpg" width="375px" alt="WCAG4">
+  <img src="images/WCAG5.jpg" width="375px" alt="WCAG5">
 
 
 ## Bronnenlijst
@@ -162,5 +171,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. Anouk heeft me geholpen met het stylen van de form in mijn contact pagina. Ze gaf me ook tips over hoe ik een class kon gebruiken in de contact pagina om de css van de homepagina te kunnen overschrijven.
   3. vasilis gevraagd hoe de eerste afbeelding op de home het hele scherm kon vullen. (margin-inline-start)
   4. Ali heeft geholpen met hoe ik de css sections kon overschrijven met class in de tweede pagina.
+  5. Nina heeft me geholpen bij de spinner draai-animatie van het logo.
 
 </details>
